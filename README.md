@@ -4,7 +4,7 @@ Scribble an app screen with your finger, Apple Pencil or mouse, and watch each s
 
 ![A hand-drawn rectangle, scribble, X-box, wavy line and pill snapping into a phone screen with a title, image, text and button](docs/media/sketch-to-screen.gif)
 
-**Use it:** https://scrawl.vercel.app/app (Sign in with publik, free)
+**Use it:** https://scrawl-psi.vercel.app/app (Sign in with publik, free)
 
 ## What works
 - Pressure-aware ink (Pointer Events + perfect-freehand), coalesced events, palm rejection once an Apple Pencil touches the glass; finger or mouse draws when there's no pen

@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://scrawl.vercel.app"),
+  metadataBase: new URL("https://scrawl-psi.vercel.app"),
   title: "scrawl: sketch an app screen, get the code",
   description:
     "Scribble an app screen with your finger, Apple Pencil or mouse. Every stroke snaps into a real UI part, then one tap gives you a polished screen and copyable HTML/CSS. Free and open source, in your browser.",
