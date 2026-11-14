@@ -1,0 +1,12 @@
+{
+ "page": null,
+ "url": "http://localhost:3931/",
+ "root": null,
+ "kind": "software",
+ "category": "sketch-to-UI drawing app",
+ "primary": "Start drawing",
+ "rounds": 3,
+ "start": "2026-11-14T03:45:49.988Z",
+ "by": "gate.mjs --start",
+ "holder": 56518
+}

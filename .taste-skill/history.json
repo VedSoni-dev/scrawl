@@ -1,0 +1,20 @@
+{
+ "palettes": [
+  "blue-black-cornflower"
+ ],
+ "types": [
+  "epilogue"
+ ],
+ "dealt": [
+  "epilogue",
+  "funnel",
+  "manrope"
+ ],
+ "moments": [
+  {
+   "id": "pinned-chapters",
+   "at": "2026-11-14T03:46:09.654Z",
+   "seed": "25bf2b4d"
+  }
+ ]
+}

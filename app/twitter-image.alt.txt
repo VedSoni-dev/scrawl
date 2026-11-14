@@ -1,1 +1,1 @@
-scrawl: scribble an app screen and watch it snap into a real one
+scrawl's landing page: 'Sketch-to-code for iPad, phone and laptop' beside scrawl's window, where a sketched phone screen has snapped into a title, an image, text and a button.

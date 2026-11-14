@@ -22,3 +22,6 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+## Design
+Landing (/) is built with the taste skill (kit in public/assets, page CSS public/assets/landing.css, plan in .taste-skill/plan.md); the app (/app) uses the same colours and faces in app/app/app.css. Pictures on the landing page live in components/landing/Pieces.tsx.

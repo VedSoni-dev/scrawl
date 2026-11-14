@@ -578,7 +578,7 @@ export default function Scrawl() {
               </div>
             )}
             {!hasScreen && !doc.ink.length && !onboard && (
-              <div className="sc-ghost-hint" aria-hidden><div className="sc-ghost-rect" /><p>Draw a big rectangle here</p></div>
+              <div className="sc-ghost-hint" aria-hidden><div className="sc-ghost-rect" /><p>Draw a big rectangle here</p><small>finger, Pencil or mouse</small></div>
             )}
           </div>
 
