@@ -1,10 +1,21 @@
 # scrawl
 
+![scrawl: scribble an app screen, every stroke snaps into a real UI part](docs/media/cover.png)
+
 Scribble an app screen with your finger, Apple Pencil or mouse, and watch each stroke snap into a real UI part; one tap gives you a polished screen and HTML/CSS you can paste anywhere. A free, open-source alternative to the unreleased "Claude drawing app for iPad" demo.
 
-![A hand-drawn rectangle, scribble, X-box, wavy line and pill snapping into a phone screen with a title, image, text and button](docs/media/sketch-to-screen.gif)
+## See it
 
-**Use it:** https://scrawl-psi.vercel.app/app (Sign in with publik, free)
+![Drawing a pill inside the screen: it snaps into a Continue button, then the Code tab shows the HTML/CSS written from the sketch](docs/media/pill-to-button.gif)
+
+| | |
+|---|---|
+| ![A big rectangle drawn on the board has become an empty phone screen named Sign up](docs/media/1-draw-a-box.png) | ![Scribbles inside the screen snapped into a title, an image placeholder and a line of text, listed in Layers](docs/media/2-parts-snap-in.png) |
+| ![A pill drawn near the bottom became a Continue button](docs/media/3-pill-is-a-button.png) | ![The Code tab with the HTML/CSS generated from the sketch, just copied](docs/media/4-copy-the-code.png) |
+
+That's the real app with a sketch drawn in it, nothing mocked up.
+
+**Use it:** https://scrawl-psi.vercel.app/app (Sign in with publik, free) · **Landing page:** https://scrawl-psi.vercel.app · **On publik:** signs in through the fork this builds hub listing for now; its own listing comes next week
 
 ## What works
 - Pressure-aware ink (Pointer Events + perfect-freehand), coalesced events, palm rejection once an Apple Pencil touches the glass; finger or mouse draws when there's no pen
