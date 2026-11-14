@@ -1,0 +1,21 @@
+:root {
+  --bg: #f3f4f6; --bg-2: #e9ebef; --card: #ffffff; --ink: #14161a; --muted: #5d6470; --line: #dcdfe5;
+  --accent: #2a5bd7; --accent-ink: #ffffff; --accent-soft: rgba(42, 91, 215, 0.12); --dot: #c9cdd5;
+  --sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --publik-bg: var(--bg); --publik-card: var(--card); --publik-ink: var(--ink); --publik-muted: var(--muted);
+  --publik-line: var(--line); --publik-accent: var(--ink); --publik-accent-ink: var(--card); --publik-hover: var(--bg-2);
+  --publik-display-font: var(--sans);
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1115; --bg-2: #171a20; --card: #161920; --ink: #eef0f4; --muted: #9aa1ad; --line: #2a2e37;
+    --accent: #6b93ff; --accent-ink: #0b0d11; --accent-soft: rgba(107, 147, 255, 0.16); --dot: #2a2e37;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }

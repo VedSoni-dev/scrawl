@@ -1,0 +1,59 @@
+.ld { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+.ld-nav { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
+.ld-brand { display: inline-flex; align-items: center; gap: 8px; font-weight: 650; font-size: 18px; text-decoration: none; letter-spacing: -0.01em; }
+.ld-brand svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; }
+.ld-nav nav { display: flex; gap: 18px; align-items: center; font-size: 14px; }
+.ld-nav nav a:not(.ld-btn) { text-decoration: none; color: var(--muted); }
+.ld-btn { display: inline-flex; align-items: center; min-height: 46px; padding: 0 20px; border-radius: 12px; background: var(--ink); color: var(--card); font-weight: 600; text-decoration: none; font-size: 15px; }
+.ld-btn-sm { min-height: 38px; padding: 0 14px; font-size: 14px; }
+.ld-btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+.ld-btn:hover { opacity: .9; }
+.ld-hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; padding: 48px 0 72px; }
+.ld-kicker { font: 500 13px var(--mono); color: var(--accent); margin: 0 0 16px; }
+.ld h1 { font-size: clamp(36px, 5.4vw, 60px); line-height: 1.02; letter-spacing: -0.035em; margin: 0 0 20px; font-weight: 680; }
+.ld-sub { font-size: 18px; line-height: 1.55; color: var(--muted); margin: 0 0 28px; max-width: 34em; }
+.ld-ctas { display: flex; flex-wrap: wrap; gap: 10px; }
+.ld-note { font-size: 13px; color: var(--muted); margin: 14px 0 0; }
+.ld-demo { position: relative; width: 100%; max-width: 340px; aspect-ratio: 320 / 520; justify-self: center; background-color: var(--card); background-image: radial-gradient(var(--dot) 1px, transparent 1.2px); background-size: 18px 18px; border-radius: 28px; border: 1px solid var(--line); box-shadow: 0 30px 60px -40px rgba(0,0,0,.45); }
+.ld-ink { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; stroke: var(--ink); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.ld-ink path { stroke-dasharray: 1400; stroke-dashoffset: 1400; animation: ld-draw 9s infinite; }
+.ld-ink .i2 { animation-name: ld-draw2; } .ld-ink .i3 { animation-name: ld-draw3; } .ld-ink .i4 { animation-name: ld-draw4; } .ld-ink .i5 { animation-name: ld-draw5; }
+@keyframes ld-draw { 0% { stroke-dashoffset: 1400; opacity: 1 } 10% { stroke-dashoffset: 0; opacity: 1 } 13%,100% { stroke-dashoffset: 0; opacity: 0 } }
+@keyframes ld-draw2 { 0%,14% { stroke-dashoffset: 1400; opacity: 1 } 22% { stroke-dashoffset: 0; opacity: 1 } 25%,100% { stroke-dashoffset: 0; opacity: 0 } }
+@keyframes ld-draw3 { 0%,26% { stroke-dashoffset: 1400; opacity: 1 } 36% { stroke-dashoffset: 0; opacity: 1 } 39%,100% { stroke-dashoffset: 0; opacity: 0 } }
+@keyframes ld-draw4 { 0%,40% { stroke-dashoffset: 1400; opacity: 1 } 50% { stroke-dashoffset: 0; opacity: 1 } 53%,100% { stroke-dashoffset: 0; opacity: 0 } }
+@keyframes ld-draw5 { 0%,54% { stroke-dashoffset: 1400; opacity: 1 } 62% { stroke-dashoffset: 0; opacity: 1 } 65%,100% { stroke-dashoffset: 0; opacity: 0 } }
+.ld-ui > div { position: absolute; opacity: 0; animation: ld-in 9s infinite; }
+.ld-ui .u1 { left: 7.5%; top: 4.2%; width: 85%; height: 91.6%; border: 1.5px solid var(--ink); border-radius: 24px; animation-name: ld-in1; }
+.ld-ui .u2 { left: 15%; top: 11%; font-weight: 700; font-size: clamp(16px, 4.6vw, 20px); letter-spacing: -0.02em; animation-name: ld-in2; }
+.ld-ui .u3 { left: 15.6%; top: 21.5%; width: 68%; height: 30%; border-radius: 16px; background: linear-gradient(140deg, var(--accent-soft), var(--bg-2)); animation-name: ld-in3; }
+.ld-ui .u4 { left: 15.6%; top: 56%; width: 70%; font-size: 13px; line-height: 1.45; color: var(--muted); animation-name: ld-in4; }
+.ld-ui .u5 { left: 22%; top: 82.6%; width: 56%; height: 7.7%; border-radius: 999px; background: var(--accent); color: var(--accent-ink); display: grid; place-items: center; font-weight: 600; font-size: 14px; animation-name: ld-in5; }
+@keyframes ld-in1 { 0%,11% { opacity: 0; transform: scale(.97) } 14%,92% { opacity: 1; transform: none } 100% { opacity: 0 } }
+@keyframes ld-in2 { 0%,23% { opacity: 0; transform: scale(.94) } 26%,92% { opacity: 1; transform: none } 100% { opacity: 0 } }
+@keyframes ld-in3 { 0%,37% { opacity: 0; transform: scale(.94) } 40%,92% { opacity: 1; transform: none } 100% { opacity: 0 } }
+@keyframes ld-in4 { 0%,51% { opacity: 0; transform: scale(.96) } 54%,92% { opacity: 1; transform: none } 100% { opacity: 0 } }
+@keyframes ld-in5 { 0%,63% { opacity: 0; transform: scale(.94) } 66%,92% { opacity: 1; transform: none } 100% { opacity: 0 } }
+@media (prefers-reduced-motion: reduce) { .ld-ink path { animation: none; opacity: 0; } .ld-ui > div { animation: none; opacity: 1; } }
+.ld h2 { font-size: clamp(26px, 3.2vw, 34px); letter-spacing: -0.025em; margin: 0 0 24px; font-weight: 650; }
+.ld-how, .ld-works, .ld-free { padding: 64px 0; border-top: 1px solid var(--line); }
+.ld-shapes { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+.ld-shapes li { padding: 18px; border-radius: 16px; background: var(--card); border: 1px solid var(--line); display: grid; gap: 4px; }
+.ld-shapes svg { width: 40px; height: 40px; fill: none; stroke: var(--ink); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; margin-bottom: 10px; }
+.ld-shapes b { font-weight: 600; } .ld-shapes span { color: var(--muted); font-size: 14px; }
+.ld-small { color: var(--muted); font-size: 15px; line-height: 1.55; margin: 20px 0 0; max-width: 40em; }
+.ld-works { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; }
+.ld-works ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+.ld-works li { padding-left: 22px; position: relative; line-height: 1.5; }
+.ld-works li::before { content: ""; position: absolute; left: 0; top: .6em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+.ld-dim li { color: var(--muted); } .ld-dim li::before { background: var(--line); }
+.ld-pitch { max-width: 40em; font-size: 16px; line-height: 1.6; }
+.ld-pitch p { margin: 0 0 12px; }
+.ld-pitch a { font-weight: 600; }
+.ld-foot { padding: 32px 0 48px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); line-height: 1.55; }
+.ld-foot p { margin: 0 0 6px; }
+@media (max-width: 860px) {
+  .ld-hero { grid-template-columns: 1fr; gap: 36px; padding-top: 24px; }
+  .ld-shapes { grid-template-columns: repeat(2, 1fr); }
+  .ld-works { grid-template-columns: 1fr; gap: 32px; }
+}
