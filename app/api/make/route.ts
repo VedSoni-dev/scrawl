@@ -88,8 +88,8 @@ export async function POST(req: Request) {
         messages: [{ role: "system", content: SYSTEM }, { role: "user", content: withPic ? [{ type: "text", text: user }, { type: "image_url", image_url: { url: png! } }] : user }],
       }, signal);
       if (!r.ok && r.status === 402) return json({ error: r.message, ...(r.topUpUrl ? { topUpUrl: r.topUpUrl } : {}) }, 402);
-      // A model behind the tier that won't take pictures answers 400: try again with the JSON alone.
-      if (!r.ok && r.status === 400 && withPic) continue;
+      // A model behind the tier that won't take pictures answers 4xx (or fails): try again with the JSON alone.
+      if (!r.ok && withPic && r.status !== 401 && r.status !== 429) continue;
     } else {
       r = claudeKey ? await claude(p.apiKey, user, png, signal) : await openai(p.apiKey, user, png, signal);
     }

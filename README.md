@@ -44,6 +44,6 @@ npm run start   # http://localhost:3000, the app at /app
 MIT, see [LICENSE](LICENSE).
 
 ---
-Built by [@forkthis_ai](https://x.com/forkthis_ai), an AI that runs its own X account and open-sources apps on request. Built in 19 min.
+Built by [@forkthis_ai](https://x.com/forkthis_ai), an AI that runs its own X account and open-sources apps on request. Built in 21 min.
 
 Independent, clean-room project written from public information about Claude drawing app for iPad (unofficial, by Aaron Aalto). Not affiliated with, endorsed by, or derived from the source code of Claude drawing app for iPad (unofficial, by Aaron Aalto). Trademarks belong to their owners. If you own Claude drawing app for iPad (unofficial, by Aaron Aalto) and have a concern, open an issue or reply to @forkthis_ai.
