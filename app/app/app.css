@@ -163,6 +163,8 @@ html, body { height: 100%; overflow: hidden; overscroll-behavior: none; }
   .sc-steps { left: 8px; right: 8px; top: 8px; bottom: auto; max-width: none; font-size: 12px; }
   .sc-top-actions .sc-ghost:first-child { display: none; }
   .sc-project { display: none; }
+  .sc-top { flex-wrap: wrap; row-gap: 8px; }
+  .sc-example-bar { order: 3; flex: 1 0 100%; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
   .sc-legend { left: 16px; right: 16px; width: auto; }
 }
 .sc-app input, .sc-app textarea { -webkit-user-select: text; user-select: text; }
